@@ -12,6 +12,7 @@ const StyledTopbar = styled.div`
   position: relative;
   width: 100%;
   display: flex;
+  background-color: #2c2c2c;
   align-items: center;
   justify-content: space-between;
   ${({ reverseDirection }) =>
@@ -35,8 +36,8 @@ const StyledHistoryButton = styled(IconButton)`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   padding: 2px;
 `;
 

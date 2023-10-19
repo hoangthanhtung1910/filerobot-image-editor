@@ -36,7 +36,7 @@ const EXAMPLE_CODE_TABS = {
 };
 
 const DEFAULT_IMAGES_SRCS = [
-  'https://scaleflex.cloudimg.io/v7/demo/river.png?w=100',
+  // 'https://scaleflex.cloudimg.io/v7/demo/river.png?w=100',
   'https://scaleflex.cloudimg.io/v7/demo/spencer-davis-unsplash.jpg?w=100',
   'https://scaleflex.cloudimg.io/v7/demo/damian-markutt-unsplash.jpg?w=100',
 ];
@@ -270,17 +270,17 @@ function showAccordionContent(event) {
   content.style.display = !content?.offsetWidth ? 'block' : 'none';
 }
 
-crop.addEventListener('change', onChangeTabsHandler);
-finetune.addEventListener('change', onChangeTabsHandler);
-filter.addEventListener('change', onChangeTabsHandler);
-watermark.addEventListener('change', onChangeTabsHandler);
-annotate.addEventListener('change', onChangeTabsHandler);
-resize.addEventListener('change', onChangeTabsHandler);
+// crop.addEventListener('change', onChangeTabsHandler);
+// finetune.addEventListener('change', onChangeTabsHandler);
+// filter.addEventListener('change', onChangeTabsHandler);
+// watermark.addEventListener('change', onChangeTabsHandler);
+// annotate.addEventListener('change', onChangeTabsHandler);
+// resize.addEventListener('change', onChangeTabsHandler);
 addImg.addEventListener('change', uploadImg);
-modeOptions.addEventListener('change', changeModeHandler);
-jsTabTitle.addEventListener('click', toggleActiveCodeTab);
-reactTabTitle.addEventListener('click', toggleActiveCodeTab);
-cdnTabTitle.addEventListener('click', toggleActiveCodeTab);
+// modeOptions.addEventListener('change', changeModeHandler);
+// jsTabTitle.addEventListener('click', toggleActiveCodeTab);
+// reactTabTitle.addEventListener('click', toggleActiveCodeTab);
+// cdnTabTitle.addEventListener('click', toggleActiveCodeTab);
 copyButtons.forEach((copyButton) => {
   copyButton.addEventListener('click', copyCodeHandler);
 });

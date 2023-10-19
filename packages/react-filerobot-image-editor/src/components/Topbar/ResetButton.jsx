@@ -49,7 +49,7 @@ const ResetButton = ({ margin }) => {
         title={t('resetOperations')}
         margin={margin}
       >
-        <Revert size={12} />
+        <Revert size={14} color="white" />
       </StyledHistoryButton>
       {isModalOpened && (
         <Modal
