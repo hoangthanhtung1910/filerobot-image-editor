@@ -325,16 +325,14 @@ const config = {
     // defaultImageFileName: 'Test',
     theme: {
         palette: {
-            'bg-primary-active': '#75df72',
+            'accent-primary-active': '#ffffff',
+            'bg-primary-active': '#999999',
             'bg-primary': '#434343',
             'icons-primary': '#ffffff',
             'icons-secondary': '#ffffff',
             'bg-secondary': '#1e1e1e',
             'bg-third': '#2C2C2C',
-        },
-        typography: {
-            fontFamily: 'Roboto, Arial',
-        },
+        }
     },
     // useBackendTranslations: true, // if false, translations object will be used if not provided default translations will be there.
     // translations: null,

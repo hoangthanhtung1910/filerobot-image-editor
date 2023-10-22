@@ -55,6 +55,7 @@ const StyledTabItemLabel = styled(Label)`
   font-size: 11px;
   line-height: 12px;
   text-align: center;
+  color: #90eee7;
 
   span {
     white-space: normal;

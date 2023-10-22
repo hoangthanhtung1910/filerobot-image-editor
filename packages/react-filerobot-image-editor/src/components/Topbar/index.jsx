@@ -25,17 +25,13 @@ const Topbar = () => {
 
   return (
     <StyledTopbar reverseDirection={showBackButton} className="FIE_topbar">
-      <StyledFlexCenterAlignedContainer
-        reverseDirection={showBackButton}
-        className="FIE_topbar-buttons-wrapper"
-      >
-        <SaveButton />
-        <StyledHistoryButtonsWrapper className="FIE_topbar-history-buttons">
-          <ResetButton margin="0" />
-          <UndoButton margin="0" />
-          <RedoButton margin="0" />
-        </StyledHistoryButtonsWrapper>
-      </StyledFlexCenterAlignedContainer>
+      <img
+        src="https://i.ibb.co/8xtqJHZ/login-logo.png"
+        alt="logo-pictswitch"
+        width={120}
+        crossOrigin="Anonymous"
+        draggable={false}
+      />
       <StyledFlexCenterAlignedContainer className="FIE_topbar-center-options">
         <ImageDimensionsAndDisplayToggle />
         {!disableZooming && (
@@ -45,7 +41,17 @@ const Topbar = () => {
           </>
         )}
       </StyledFlexCenterAlignedContainer>
-      {showBackButton ? <BackButton /> : <CloseButton />}
+      <StyledFlexCenterAlignedContainer
+        reverseDirection={showBackButton}
+        className="FIE_topbar-buttons-wrapper"
+      >
+        <StyledHistoryButtonsWrapper className="FIE_topbar-history-buttons">
+          <ResetButton margin="0" />
+          <UndoButton margin="0" />
+          <RedoButton margin="0" />
+        </StyledHistoryButtonsWrapper>
+        <SaveButton />
+      </StyledFlexCenterAlignedContainer>
     </StyledTopbar>
   );
 };
