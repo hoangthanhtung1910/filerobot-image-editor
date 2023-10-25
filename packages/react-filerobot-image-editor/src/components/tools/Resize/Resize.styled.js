@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import IconButton from '@scaleflex/ui/core/icon-button';
 import Input from '@scaleflex/ui/core/input';
 import Label from '@scaleflex/ui/core/label';
+import Button from '@scaleflex/ui/core/button';
 
 const StyledResizeWrapper = styled.div`
   display: flex;
@@ -18,6 +19,7 @@ const StyledResizeInput = styled(Input)`
 `;
 
 const StyledRatioLockIcon = styled(IconButton)`
+  background-color: #999999;
   margin-right: 16px;
 `;
 
@@ -26,9 +28,19 @@ const StyledXLabel = styled(Label)`
   line-height: 15px;
 `;
 
+const StyledResetButton = styled(Button)`
+  background-color: rgb(153, 153, 153);
+  //color: #90eee7;
+
+  span {
+    color: #90eee7;
+  }
+`;
+
 export {
   StyledResizeWrapper,
   StyledResizeInput,
   StyledRatioLockIcon,
   StyledXLabel,
+  StyledResetButton,
 };

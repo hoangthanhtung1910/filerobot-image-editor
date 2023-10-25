@@ -17,6 +17,7 @@ import {
   StyledResizeInput,
   StyledRatioLockIcon,
   StyledXLabel,
+  StyledResetButton,
 } from './Resize.styled';
 
 const Resize = ({ onChange, currentSize, hideResetButton, alignLeft }) => {
@@ -177,9 +178,10 @@ const Resize = ({ onChange, currentSize, hideResetButton, alignLeft }) => {
         )}
       </StyledRatioLockIcon>
       {!hideResetButton && (
-        <Button
+        <StyledResetButton
           className="FIE_resize-reset-button"
           size="sm"
+          color="white"
           onClick={
             isOriginalSize || isManualChangeDisabled ? undefined : resetResize
           }
@@ -187,7 +189,7 @@ const Resize = ({ onChange, currentSize, hideResetButton, alignLeft }) => {
           title={t('resetSize')}
         >
           {t('reset')}
-        </Button>
+        </StyledResetButton>
       )}
     </StyledResizeWrapper>
   );
