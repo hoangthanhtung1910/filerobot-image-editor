@@ -24,6 +24,7 @@ const StyledWatermarkGalleryItem = styled.div(
     border-radius: 2px;
     overflow: hidden;
     cursor: pointer;
+    background: #434343;
 
     :hover {
       background: ${theme.palette['bg-primary-active']};

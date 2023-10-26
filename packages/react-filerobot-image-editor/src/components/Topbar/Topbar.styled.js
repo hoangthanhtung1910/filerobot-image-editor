@@ -39,6 +39,7 @@ const StyledHistoryButton = styled(IconButton)`
   width: 20px;
   height: 20px;
   padding: 2px;
+  background-color: #2c2c2c;
 `;
 
 const StyledDimensionsLabel = styled(Label)`

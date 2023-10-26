@@ -13,9 +13,9 @@ const StyledResizeWrapper = styled.div`
 `;
 
 const StyledResizeInput = styled(Input)`
-  width: 70px;
-  height: 24px;
-  margin: ${({ noLeftMargin }) => (noLeftMargin ? '8px 8px 8px 0' : '8px')};
+  width: 74px;
+  //height: 28px;
+  margin: ${({ noLeftMargin }) => (noLeftMargin ? '0 8px 0 0' : '8px')};
 `;
 
 const StyledRatioLockIcon = styled(IconButton)`
