@@ -26,10 +26,12 @@ import {
   StyledQualityWrapper,
   StyledResizeOnSave,
 } from './Topbar.styled';
+import {backgroundColorMixin} from "@scaleflex/ui/core/notification/notification.mixin";
 
 const sliderStyle = { marginBottom: 16 };
 const saveButtonWrapperStyle = { minWidth: 67, width: 'fit-content' }; // 67px same width as tabs bar
 const saveButtonMenuStyle = { marginLeft: 12 };
+const saveButtonStyle = { backgroundColor: '#434343' };
 
 let isFieSaveMounted = true;
 
@@ -259,6 +261,7 @@ const SaveButton = () => {
         menuItems={menuItems}
         menuStyle={saveButtonMenuStyle}
         wrapperStyle={saveButtonWrapperStyle}
+        buttonStyle={saveButtonStyle}
         disabled={isLoadingGlobally || isBlockerError}
       />
       {isModalOpened && (
@@ -277,6 +280,7 @@ const SaveButton = () => {
           doneButtonColor="primary"
           areButtonsDisabled={isLoadingGlobally}
           zIndex={11110}
+          maxWidth="md"
         >
           <StyledFileNameInput
             className="FIE_save-file-name-input"

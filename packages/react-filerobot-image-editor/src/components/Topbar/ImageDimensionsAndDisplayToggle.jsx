@@ -72,7 +72,7 @@ const ImageDimensionsAndDisplayToggle = () => {
         disabled={isResetted}
         title={t('showImageTitle')}
       >
-        <Compare />
+        <Compare color="white" />
       </StyledSmallButton>
     </>
   );

@@ -51,6 +51,8 @@ const StyledSmallButton = styled(IconButton)`
   height: 20px;
   margin: 0 ${(props) => props.horizontalMargin ?? '4px'};
   padding: 4px;
+  background-color: #434343;
+  border-color: #434343;
 `;
 
 const StyledFlexCenterAlignedContainer = styled.div`

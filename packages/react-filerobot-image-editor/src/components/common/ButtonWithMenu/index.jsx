@@ -30,6 +30,7 @@ const ButtonWithMenu = ({
   className,
   menuStyle,
   wrapperStyle,
+  buttonStyle,
   buttonRef,
 }) => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -95,6 +96,7 @@ const ButtonWithMenu = ({
           title={title}
           keepBorderRadius={!hasMultipleMenuItems}
           disabled={disabled}
+          style={buttonStyle}
         >
           {label}
         </StyledMainButton>

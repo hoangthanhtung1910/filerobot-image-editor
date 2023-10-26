@@ -17,6 +17,11 @@ const StyledMainButton = styled(Button)`
   flex-grow: 1;
   justify-content: center;
   align-items: center;
+
+  :hover {
+    background-color: #999999 !important;
+  }
+
   ${({ keepBorderRadius }) =>
     keepBorderRadius
       ? ''

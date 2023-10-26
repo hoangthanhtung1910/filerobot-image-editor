@@ -96,7 +96,7 @@ const CanvasZooming = () => {
         disabled={isZoomDisabled}
         className="FIE_topbar-zoom-out-btn"
       >
-        <Minus />
+        <Minus color="white" />
       </StyledSmallButton>
       <StyledZoomPercentageLabel
         title={t('toggleZoomMenuTitle')}
@@ -117,7 +117,7 @@ const CanvasZooming = () => {
         disabled={isZoomDisabled}
         className="FIE_topbar-zoom-in-btn"
       >
-        <Plus />
+        <Plus color="white" />
       </StyledSmallButton>
       <Menu
         anchorEl={zoomingMenuAnchorEl}

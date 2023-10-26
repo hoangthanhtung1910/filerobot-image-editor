@@ -11,7 +11,7 @@ import {
 /** Internal Dependencies */
 import { StyledModalTitle } from './Modal.styled';
 
-const style = { width: 300 };
+const style = { width: 400 };
 
 const Modal = ({
   title,
@@ -29,6 +29,7 @@ const Modal = ({
   areButtonsDisabled,
   zIndex,
   className,
+  maxWidth = 'xs',
 }) => {
   const onKeyUp = (e) => {
     if (e.key === 'Enter') {
@@ -43,6 +44,7 @@ const Modal = ({
       onClose={onCancel}
       style={{ ...style, zIndex }}
       onKeyUp={onKeyUp}
+      maxWidth={maxWidth}
     >
       <StyledModalTitle
         icon={<Icon size={25} />}
